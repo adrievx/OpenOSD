@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Prasilarts-Claire-Monitor-06-Computer-Windows-7.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -55,6 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AppStatics.cs" />
+    <Compile Include="NativeStatics.cs" />
+    <Compile Include="Util\NativeFunctions.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -93,6 +99,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\capslock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\genlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\scrolllock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Prasilarts-Claire-Monitor-06-Computer-Windows-7.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

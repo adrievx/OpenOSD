@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OpenOSD"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="120" Width="350" ResizeMode="NoResize" Topmost="True" WindowStyle="None" Background="#CC1D1D1D" AllowsTransparency="True" Foreground="White">
     <Grid>
-        
+        <StackPanel Margin="20" Orientation="Horizontal">
+            <Image x:Name="imgIcon" Width="64" Height="64" Margin="10, 0, 0, 0"/>
+            <Label x:Name="lblMainText" Width="230" Content="CAPS LOCK ON" VerticalAlignment="Center" Foreground="White" Margin="10, 0, 0, 0" FontFamily="Arial Black" FontSize="24"/>
+        </StackPanel>
     </Grid>
 </Window>
